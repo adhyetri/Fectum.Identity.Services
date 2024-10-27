@@ -10,10 +10,9 @@ namespace Fectum.IdentityService.Model.Models.HttpResponse
     {
         private readonly List<string> _error = [];
         public int StatusCode { get; private set; }
-        public string Content { get; private set; }
-        public T Data { get; private set; }
+        public string Content { get; private set; } = default!;
+        public T Data { get; private set; } = default!;
         public bool IsSuccess { get; private set; }
-        private readonly List<string> _error = [];
 
         public List<string> Errors => _error;
 
