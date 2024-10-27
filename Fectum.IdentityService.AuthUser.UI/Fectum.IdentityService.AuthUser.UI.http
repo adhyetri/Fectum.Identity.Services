@@ -1,0 +1,8 @@
+@Fectum.IdentityService.AuthUser.UI_HostAddress = https://localhost:44398
+
+POST {{Fectum.IdentityService.AuthUser.UI_HostAddress}}/api/users/SignInAsync
+Accept: application/x-www-form-urlencoded
+
+###
+POST {{Fectum.IdentityService.AuthUser.UI_HostAddress}}/api/users/RegisterUserAsync
+Accept: application/x-www-form-urlencoded

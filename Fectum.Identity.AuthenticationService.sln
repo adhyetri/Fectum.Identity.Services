@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fectum.IdentityService.AuthUser.UI", "Fectum.IdentityService.AuthUser.UI\Fectum.IdentityService.AuthUser.UI.csproj", "{329EEB2F-CEB6-4EBB-A78D-519B8C1D6695}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fectum.IdentityService.Model.Models", "Fectum.IdentityService.Model.Models\Fectum.IdentityService.Model.Models.csproj", "{CA0E2F93-A2BC-47E2-8167-111DFA70C10C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{329EEB2F-CEB6-4EBB-A78D-519B8C1D6695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329EEB2F-CEB6-4EBB-A78D-519B8C1D6695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329EEB2F-CEB6-4EBB-A78D-519B8C1D6695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329EEB2F-CEB6-4EBB-A78D-519B8C1D6695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0E2F93-A2BC-47E2-8167-111DFA70C10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0E2F93-A2BC-47E2-8167-111DFA70C10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0E2F93-A2BC-47E2-8167-111DFA70C10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0E2F93-A2BC-47E2-8167-111DFA70C10C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {398D2235-F730-4BE3-A857-6954ADAA2C13}
+	EndGlobalSection
+EndGlobal
