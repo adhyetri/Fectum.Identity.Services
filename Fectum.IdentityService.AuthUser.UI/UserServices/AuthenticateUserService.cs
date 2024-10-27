@@ -41,7 +41,7 @@ namespace Fectum.IdentityService.AuthUser.UI.UserServices
             {
                 response.SetError(ex.Message);
                 response.SetSuccess(401, "Unauthorized", "Not authorized to access", response.IsSuccess);
-            }
+        }
             catch (Exception ex)
             {
                 throw new Exception("An error occurred during SignIn.", ex);
@@ -77,14 +77,14 @@ namespace Fectum.IdentityService.AuthUser.UI.UserServices
 
             try
             {
-                Registration registration = MappingRegistration(mappingregistration);
-                Context.IUsersInfoRegistrations.Add(registration);
-                await Context.SaveChangesAsync();
+            Registration registration = MappingRegistration(mappingregistration);
+            Context.IUsersInfoRegistrations.Add(registration);
+            await Context.SaveChangesAsync();
 
-                UserInformation userInformation = MappingUserInformation(mappingregistration.UserInformation);
-                userInformation.RegistrationId = registration.RegistrationId;
-                Context.IUsersInformation.Add(userInformation);
-                await Context.SaveChangesAsync();
+            UserInformation userInformation = MappingUserInformation(mappingregistration.UserInformation);
+            userInformation.RegistrationId = registration.RegistrationId;
+            Context.IUsersInformation.Add(userInformation);
+            await Context.SaveChangesAsync();
 
                 response.SetSuccess(200, "Success", "Successfully Registered!", response.IsSuccess);
             }
@@ -158,7 +158,7 @@ namespace Fectum.IdentityService.AuthUser.UI.UserServices
         }*/
 
         /*private static UserRole MappUserRole(UserRoleDTO role)
-        {
+            {
             UserRoleType result = !role.IsWorkingProffesional ? UserRoleType.CurrentlyLearning : UserRoleType.WorkingProfessional;
 
             UserRole userRole = new() { RoleName = result };

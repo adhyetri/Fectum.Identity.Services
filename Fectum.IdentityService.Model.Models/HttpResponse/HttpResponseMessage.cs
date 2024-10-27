@@ -13,6 +13,8 @@ namespace Fectum.IdentityService.Model.Models.HttpResponse
         public string Content { get; private set; }
         public T Data { get; private set; }
         public bool IsSuccess { get; private set; }
+        private readonly List<string> _error = [];
+
         public List<string> Errors => _error;
 
         public void SetError(string error) { _error.Add(error); IsSuccess = false; }

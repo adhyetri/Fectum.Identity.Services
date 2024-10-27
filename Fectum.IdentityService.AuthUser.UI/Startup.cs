@@ -20,7 +20,10 @@ namespace Fectum.IdentityService.AuthUser.UI
             {
                 option.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
+            services.AddTransient<ILoginUser, AuthenticateUserService>();
             services.AddTransient<IRegistration, AuthenticateUserService>();
+            services.AddScoped<HttpResponseMessage>();
+            services.AddTransient<IActiveUser, ActiveUserService>();
             services.AddTransient<IUserInformation, UsersInformationList>();
             services.AddTransient<ILoginUser, AuthenticateUserService>();
             services.AddTransient<IModifyUser, UsersInformationList>();
